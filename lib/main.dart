@@ -59,7 +59,7 @@ class MyHomePage extends StatelessWidget {
                         ),
                         child: ClipOval(
                           child: Image.network(
-                            "https://scontent.fbkk5-1.fna.fbcdn.net/v/t39.30808-6/487849031_2056391798162069_1909274992079965691_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JbyTcYMEx5QQ7kNvwH0kA6N&_nc_oc=AdkhELBxrNH6_CKXIxk0LLvry1XVYLeU48U1fSzOMjWrSJ7WBFua8VL8_avb2fQXFj4&_nc_zt=23&_nc_ht=scontent.fbkk5-1.fna&_nc_gid=JR9axQMlyQnSWdE69sQU7g&oh=00_Afi1wsPOSnw69e61jRmGtSB-lUFn1H2pG7MHMXszXG4mRA&oe=69330B38",
+                            "https://scontent.fbkk5-1.fna.fbcdn.net/v/t39.30808-6/487849031_2056391798162069_1909274992079965691_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=f9cYd3h20_cQ7kNvwG2MRbq&_nc_oc=AdnsFQ0T0KwK_N1vBUIxbrXf-jYutndVF6OoR1h79YfOGeabEG31rJ3vhXd5Kwxidq0&_nc_zt=23&_nc_ht=scontent.fbkk5-1.fna&_nc_gid=5tlO_8_EzLfb198OOFUnqA&oh=00_AflYCgrV0wlyxRhODMW_R-oFy0JZvmCTTUePWSRhweUIdg&oe=69396A78",
                             width: 200,
                             height: 200,
                             fit: BoxFit.cover,
@@ -239,7 +239,7 @@ class SecondPage extends StatelessWidget {
                   Row(
                     children: [
                       Container(
-                        padding: const EdgeInsets.all(6),
+
                         decoration: BoxDecoration(
                           color: Colors.pink[200],
                           borderRadius: BorderRadius.circular(100),
@@ -248,8 +248,8 @@ class SecondPage extends StatelessWidget {
                           child: Image.network(
                             // URL รูปโปรไฟล์หลัก
                             "https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/477519271_2015695745565008_3497196055026932845_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=23ElA4gW3ewQ7kNvwEILyWm&_nc_oc=Adn2CbKqnHIiNnRacfoeGISP8_5u2pj2jr5APsw-u6w2sqg_nvTss0PfO3e4rWQEIlI&_nc_zt=23&_nc_ht=scontent.fbkk5-6.fna&_nc_gid=km4lSLHGTt4gIvEmcmWF6g&oh=00_Afm5kPUS1zq98qWHSm1qRMPejG-pvTVZV0YonGWUwhj8FQ&oe=69396F74",
-                            width: 80,
-                            height: 80,
+                            width: 100,
+                            height: 100,
                             fit: BoxFit.cover,
 
                           ),
@@ -291,9 +291,7 @@ class SecondPage extends StatelessWidget {
 
                   const SizedBox(height: 20),
 
-                  // ---------------------------------------------
-                  // ส่วนกลาง: ชื่อ และ เครื่องหมายติ๊กถูก
-                  // ---------------------------------------------
+
                   const Row(
                     children: [
                       Text(
@@ -305,7 +303,7 @@ class SecondPage extends StatelessWidget {
                       ),
                       SizedBox(width: 5),
 
-                      // [จุดที่ 2] ติ๊กถูก: กลับมาใช้ Icon เหมือนเดิม
+
                       Icon(Icons.check_circle, color: Colors.blue, size: 20),
                     ],
                   ),
@@ -323,8 +321,8 @@ class SecondPage extends StatelessWidget {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.black,
-                        foregroundColor: Colors.white,
+                        backgroundColor: Colors.pink[100],
+                        foregroundColor: Colors.black,
                         minimumSize: const Size(double.infinity, 50),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8))),
@@ -336,9 +334,6 @@ class SecondPage extends StatelessWidget {
 
                   const SizedBox(height: 20),
 
-                  // ---------------------------------------------
-                  // รูปภาพด้านล่าง
-                  // ---------------------------------------------
                   Row(
                     children: [
                       Expanded(
@@ -348,7 +343,7 @@ class SecondPage extends StatelessWidget {
                             "https://scontent.fbkk11-1.fna.fbcdn.net/v/t39.30808-6/415929127_1744339919367260_6094816780769743436_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=UprB7kWvMO4Q7kNvwHIXvu_&_nc_oc=Adkant122hY0K-iMZubv0CS2mRjuZoHWFn_w6DrRS3kQ3rX2jI6EOKHoQeqw-16he58&_nc_zt=23&_nc_ht=scontent.fbkk11-1.fna&_nc_gid=muiXguvMMkp39ZJ16mQrqA&oh=00_AfnAEsOJgM4Y0xCU6uWkmKrRrnurofgs1J4vsclT6EEbUg&oe=69396A45",
                             height: 180,
                             fit: BoxFit.cover,
-                            errorBuilder: (context, error, stackTrace) => Container(height: 180, color: Colors.grey),
+                            errorBuilder: (context, error, stackTrace) => Container(height: 180, color: Colors.pink[50]),
                           ),
                         ),
                       ),
@@ -360,7 +355,7 @@ class SecondPage extends StatelessWidget {
                             "https://scontent.fbkk11-1.fna.fbcdn.net/v/t39.30808-6/477679139_2015701655564417_4137872474017075501_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=5FfYvoYNibcQ7kNvwEfKqN4&_nc_oc=AdnWRY8neaWoC_djSd33Mf7GNv09iSWYPk-1ss4Clal38t9wXvQtHs2jR6lepNdlp54&_nc_zt=23&_nc_ht=scontent.fbkk11-1.fna&_nc_gid=r2jvHdJZBSU2UfZ9jC2kBg&oh=00_AflGlqz55C_a1QdLnIsGQFa_nUIS7jcE8EK9P3RzMFb2JQ&oe=69398053",
                             height: 180,
                             fit: BoxFit.cover,
-                            errorBuilder: (context, error, stackTrace) => Container(height: 180, color: Colors.grey),
+                            errorBuilder: (context, error, stackTrace) => Container(height: 180, color: Colors.pink),
                           ),
                         ),
                       ),
